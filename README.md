@@ -2,7 +2,7 @@
 
 ### Introduction
 This project demonstrates how to implement Path-Based Routing using AWS Application Load Balancer (ALB) to distribute traffic across multiple backend services.
-It simulates a real-world scenario where different application paths (e.g., /app1, /app2) are routed to different EC2 instances.
+It simulates a real-world scenario where different application paths are routed to different EC2 instances.
 
 ### Key Concepts
 
@@ -69,11 +69,11 @@ Enhances traffic control & security visibility
 
 ### Real-World Use Case
 
-/api → Backend API servers
+api → Backend API servers
 
-/static → Static content servers
+static → Static content servers
 
-/admin → Restricted admin services
+admin → Restricted admin services
 Configure path-based routing rules
 
 Validate routing behavior via browser testing
