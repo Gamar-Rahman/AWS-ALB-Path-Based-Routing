@@ -44,17 +44,6 @@ Internet-facing ALB
 
 Listener: HTTP (Port 80)
 
-4️⃣ Configure Path-Based Routing
-
-/app1 → Target Group 1
-
-/app2 → Target Group 2
-
-5️⃣ Test Configuration
-
-http://ALB-DNS/app1 → EC2-1
-
-http://ALB-DNS/app2 → EC2-2
 
 ### Security Considerations
 
