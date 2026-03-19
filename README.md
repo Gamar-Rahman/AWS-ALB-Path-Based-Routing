@@ -24,15 +24,14 @@ Create an Application Load Balancer
 
 ### Architecture
 
-           Client Request
-                 │
-                 ▼
+        Client Request
+     │
+     ▼
 Application Load Balancer (ALB)
-                 │
+     │
  ┌───────────────┬───────────────┐
- ▼                               ▼
- /app1 → EC2-1              /app2 → EC2-2
-
+ ▼               ▼
+/app1 → EC2-1   /app2 → EC2-2
 
 ### Implementation Steps
 1️⃣ Launch EC2 Instances (Bash Automation)
