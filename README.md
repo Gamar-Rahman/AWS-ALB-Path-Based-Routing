@@ -22,17 +22,6 @@ Deploy simple web apps on each instance
 
 Create an Application Load Balancer
 
-### Architecture
-
-        Client Request
-     │
-     ▼
-Application Load Balancer (ALB)
-     │
- ┌───────────────┬───────────────┐
- ▼               ▼
-/app1 → EC2-1   /app2 → EC2-2
-
 ### Implementation Steps
 1️⃣ Launch EC2 Instances (Bash Automation)
 #!/bin/bash
