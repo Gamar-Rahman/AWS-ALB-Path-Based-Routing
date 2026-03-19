@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Switch to superuser (root) to execute commands that require elevated privileges
+sudo su
+
+# Update the system packages and software
+yum update -y
+
+# Install Apache HTTP Server (httpd) and PHP on the system
+yum install httpd php -y
+
+# Start the Apache HTTP Server service
+systemctl start httpd
+
+# Enable the Apache HTTP Server service to start on system boot
+systemctl enable httpd
+
+# Change the working directory to /var/www/html/ where web files are usually stored
+cd /var/www/html/
+
+# Download the index.html file from a specified URL
+wget https://labtask228.s3.amazonaws.com/index.html
+
+# Create a directory named 'admin'
+mkdir admin
+
+# Change the working directory to 'admin'
+cd admin
+
+# Download the index.html file for the admin section from a specified URL
+wget https://labtask228.s3.amazonaws.com/admin/index.html
+
+			
